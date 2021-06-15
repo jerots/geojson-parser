@@ -50,11 +50,9 @@ const generateGeoJson = (countriesData) => {
                 },
             }
         })
-
-        // const filteredCountryCoordinates = filteredCountryFeatures.map(feature => feature.geometry.coordinates)
-        // const flattenedCoordinates = flatten(filteredCountryCoordinates);
-
     })
+
+    
     const output = {
         "type": "FeatureCollection",                                                             
         "features": flatten(countryFeatures)
