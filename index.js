@@ -34,12 +34,12 @@ const generateGeoJson = (countriesData) => {
 
     const regions = config.regions;
 
-    const countryFeatures = regions.map((region) => {
+    const regionFeatures = regions.map((region) => {
         const countriesInRegion = countriesData.features.filter(feature => {
             return region.countries.includes(feature.properties.ADMIN)
         })
 
-        return countriesInRegion.map(countryFeature => {
+        const finalCountryFeatures = countriesInRegion.map(countryFeature => {
             return {
                 ...countryFeature,
                 properties: {
@@ -50,15 +50,23 @@ const generateGeoJson = (countriesData) => {
                 },
             }
         })
+        return {
+            "id": region.id,
+            "type": "FeatureCollection",                                                             
+            "features": flatten(finalCountryFeatures)    
+        }
     })
 
+
     
-    const output = {
-        "type": "FeatureCollection",                                                             
-        "features": flatten(countryFeatures)
+    // const output = {
+    //     "type": "FeatureCollection",                                                             
+    //     "features": flatten(countryFeatures)
     
+    // }
+    for (const regionFeature of regionFeatures){
+        fs.writeFile(`./output/${regionFeature.id}.geojson`, JSON.stringify(regionFeature), () =>{})    
     }
-    fs.writeFile('./output/output.geojson', JSON.stringify(output), () =>{})    
     
    
 
