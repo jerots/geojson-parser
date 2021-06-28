@@ -60,7 +60,7 @@ const config = {
       id: 'america',
       name: "North America",
       countries: [
-        "United States",
+        "United States of America",
         "Trinidad and Tobago"
     ],
     },

@@ -72,13 +72,6 @@ const generateGeoJson = (countriesData) => {
 
 }
 
-
-
-
-
-
-
-
 const countriesData = readInput('./input/countries.geojson');
 generateCountriesList(countriesData);
 generateGeoJson(countriesData);
