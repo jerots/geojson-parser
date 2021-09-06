@@ -2,122 +2,98 @@ const config = {
   regions: [
     {
       id: 'nwe',
-      name: "NWE",
+      name: 'NWE',
       countries: [
-        "United Kingdom",
-        "France",
-        "Belgium",
-        "Netherlands",
-        "Lithuania",
-        "Norway",
-        "Poland"
-    ],
+        'United Kingdom',
+        'France',
+        'Belgium',
+        'Netherlands',
+        'Lithuania',
+        'Norway',
+        'Poland',
+      ],
     },
     {
       id: 'swe',
-      name: "SWE",
+      name: 'SWE',
       countries: [
         // "France",
-        "Portugal",
-        "Spain",
-    ],
+        'Portugal',
+        'Spain',
+      ],
     },
     {
       id: 'med',
-      name: "Med",
-      countries: [
-        "Italy",
-        "Turkey",
-        "Greece",
-        "Croatia",
-    ],
+      name: 'Med',
+      countries: ['Italy', 'Turkey', 'Greece', 'Croatia'],
     },
     {
-      id: 'southamerica',
-      name: "South America",
+      id: 'south-america',
+      name: 'South America',
       countries: [
-        "Brazil",
-        "Chile",
-        "Mexico",
-        "Argentina",
-        "Peru",
-        "Panama",
-        "Colombia"
-    ],
+        'Brazil',
+        'Chile',
+        'Mexico',
+        'Argentina',
+        'Peru',
+        'Panama',
+        'Colombia',
+      ],
     },
     {
       id: 'africa',
-      name: "Africa",
-      countries: [
-        "Algeria",
-        "Nigeria",
-        "Angola",
-        "Egypt",
-        "Cameroon"
-    ],
+      name: 'Africa',
+      countries: ['Algeria', 'Nigeria', 'Angola', 'Egypt', 'Cameroon'],
     },
     {
-      id: 'america',
-      name: "North America",
-      countries: [
-        "United States of America",
-        "Trinidad and Tobago"
-    ],
+      id: 'north-america',
+      name: 'North America',
+      countries: ['United States of America', 'Trinidad and Tobago'],
     },
     {
-      id: 'indiame',
-      name: "Middle East/India",
+      id: 'india-me',
+      name: 'Middle East/India',
       countries: [
-        "United Arab Emirates",
-        "Qatar",
-        "Oman",
-        "India",
-        "Pakistan",
-        "Israel",
-        "Jordan",
-        "Kuwait",
-        "Bahrain",
-        "Bangladesh",
-    ],
+        'United Arab Emirates',
+        'Qatar',
+        'Oman',
+        'India',
+        'Pakistan',
+        'Israel',
+        'Jordan',
+        'Kuwait',
+        'Bahrain',
+        'Bangladesh',
+      ],
     },
     {
-      id: "jktc",
-      name: "JKTC",
-      countries: [
-        "Japan",
-        "China",
-        "South Korea",
-        "Taiwan",
-      ]
+      id: 'jktc',
+      name: 'JKTC',
+      countries: ['Japan', 'China', 'South Korea', 'Taiwan'],
     },
     {
-      id: "southeastasia",
-      name: "South Ease Asia",
+      id: 'south-east-asia',
+      name: 'South East Asia',
       countries: [
-        "Singapore",
-        "Brunei",
-        "Indonesia",
-        "Thailand",
-        "Myanmar",
-        "Malaysia",
-      ]
+        'Singapore',
+        'Brunei',
+        'Indonesia',
+        'Thailand',
+        'Myanmar',
+        'Malaysia',
+      ],
     },
     {
-      id: "australasia",
-      name: "Australasia",
-      countries: [
-        "Australia",
-        "Papua New Guinea",
-      ]
+      id: 'australasia',
+      name: 'Australasia',
+      countries: ['Australia', 'Papua New Guinea'],
     },
     {
-      id: "russia",
-      name: "Russia",
-      countries: [
-        "Russia"
-      ]
-    }
-  ],
+      id: 'russia',
+      name: 'Russia',
+      countries: ['Russia'],
+    },
+  ]
 };
 
 module.exports = {
