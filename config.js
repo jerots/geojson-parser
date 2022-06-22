@@ -8,9 +8,9 @@ const config = {
         'France',
         'Belgium',
         'Netherlands',
-        'Lithuania',
-        'Norway',
-        'Poland',
+        // 'Lithuania',
+        // 'Norway',
+        // 'Poland',
       ],
     },
     {
